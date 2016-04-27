@@ -1,0 +1,118 @@
+.scroller {
+  -webkit-overflow-scrolling: touch;
+  scroll-snap-type: mandatory;
+  /* older spec implementation */
+  scroll-snap-destination: 0% 100%;
+  scroll-snap-points-x: repeat(100%);
+
+}
+
+.each-container {
+height: 100vh;
+padding: 0 7.5%;
+background: lightgray;
+position: relative;
+  
+  .each-title {
+
+    h1 {
+      font-size: 36px;
+      margin-top: 60px;
+      font-family: 'cooper_hewittheavy';
+      margin-bottom: 0;
+      color: white;
+      line-height: 1.1;
+      letter-spacing: 3px;
+    }
+
+    p {
+      font-family: 'cooper_hewittbook';
+      color: white;
+      font-size: 18px;
+      margin: 18px 0;
+      letter-spacing: .5px;
+    }
+
+    ul {
+      margin: 0;
+      padding: 0;
+    li {
+      list-style: none;
+      float: left;
+      padding-right: 45px;
+
+      a {
+        text-decoration: none;
+        font-family: 'Merriweather', serif;
+        font-style: italic;
+        font-weight: bold;
+        color: white;
+        font-size: 12px;
+        letter-spacing: 1px;
+        position: relative;
+
+        &:hover .line-underneath {
+          max-width: 100%;
+
+        }
+      }
+    }
+  }
+  }
+
+  .logos {
+    float: right;
+    position: absolute;
+    right: 90px;
+    top: 60px;
+
+    img {
+
+    }
+  }
+
+}
+
+.nike {
+  top: 80px !important;
+}
+
+.project1 {
+  background-image: url(/img/image-TheDesign.png);
+  background-size: 100% 100%;
+  background-attachment: fixed;
+
+}
+
+.project2 {
+  background-image: url(/img/heineken.png);
+  background-size: 100% 100%;
+  background-attachment: fixed;
+}
+
+.project3 {
+  background-image: url(/img/Hero2.png);
+  background-size: 100% 100%;
+  background-attachment: fixed;
+}
+
+.project4 {
+  background-image: url(/img/glassy.png);
+  background-size: 100% 100%;
+  background-attachment: fixed;
+}
+
+.project5 {
+  background-image: url(/img/wowwee.png);
+  background-size: 100% 100%;
+  background-attachment: fixed;
+}
+
+.white {
+  background: white!important;
+  height: 1px !important;
+}
+
+.clear-left {
+  clear: left;
+}

@@ -1,0 +1,327 @@
+.awards-container {
+  padding: 0 7.5%;
+  background-image: url(/img/background.png);
+  background-size: 100% 100%;
+  background-position: 0;
+  h5 {
+    font-family: 'Merriweather', serif;
+    font-style: italic;
+    font-weight: bold;
+    margin-top: 120px;
+    margin-bottom: 18px;
+    padding-left: 6px;
+  }
+
+  h1 {
+      font-family: 'cooper_hewittheavy';
+      font-size: 66px;
+      margin: 0;
+      width: 30%;
+
+  }
+
+  h3 {
+    font-size: 22px;
+    width: 70%;
+    font-family: 'cooper_hewittbook';
+    margin-bottom: 36px;
+  }
+
+  .first {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    li {
+      width: 50%;
+      height: 50%;
+      list-style: none;
+      position: relative;
+      float: left;
+      font-size: 0;
+      overflow: auto;
+      background: white;
+
+      &:first-child {
+        width: 50%;
+        height: 50%;
+        overflow: auto;
+
+      }
+
+
+      &:nth-child(2){
+        width: 50%;
+        height: 100%;
+        float: right;
+        font-size: 0;
+        img {
+          height: 100%;
+          width: 100%;
+          float: right;
+        }
+      }
+
+       &:last-child{
+        width: 50%;
+        height: 50%;
+        float: left;
+        background: white;
+        font-size: 0;
+
+        img {
+          height: 100%;
+          width: 50%;
+          float: right;
+        }
+      }
+
+      img {
+        width: 50%;
+        height: 100%;
+      }
+
+     
+    }
+  }
+
+  .second {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+
+    li {
+      width: 50%;
+      height: 50%;
+      list-style: none;
+      position: relative;
+      float: left;
+      font-size: 0;
+      background: white;
+      
+
+
+      &:nth-child(2){
+        width: 50%;
+        height: 50%;
+        float: right;
+
+        img {
+          height: 100%;
+          width: 50%;
+          float: right;
+        }
+      }
+
+       &:last-child{
+        width: 50%;
+        height: 50%;
+        float: left;
+        background: white;
+
+        img {
+          height: 100%;
+          width: 50%;
+          float: left;
+        }
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+
+     
+    }
+  }
+
+
+}
+
+.third {
+
+   width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+
+
+  li {
+      width: 50%;
+      height: 50%;
+      list-style: none;
+      position: relative;
+      float: left;
+      font-size: 0;
+      overflow: auto;
+      background: white;
+
+      img {
+        height: 100% !important;
+        width: 50%;
+        overflow: auto;
+      }
+
+      &:first-child img {
+        float:right;
+
+      }
+
+      &:nth-child(2) img {
+        float: right;
+      }
+
+      &:nth-child(3) img{
+        float: left;
+      }
+
+      &:last-child img {
+        float: left;
+      }
+
+  }
+ 
+      
+}
+
+
+
+.big-button {
+  width: 100%;
+  padding: 35px 0;
+  background: gray;
+  clear: both;
+  text-align: center;
+  cursor: pointer;
+
+  h4 {
+    font-size: 24px;
+    padding: 0;
+    margin: 0;
+    font-family: 'Merriweather', serif;
+    font-style: italic;
+    font-weight: bold;
+    color: white;
+
+  }
+}
+.hidden {
+  display: none;
+}
+
+.info {
+  position: relative !important;
+  width: 50%;
+  display:table;
+  background: white;
+  text-align: center;
+  height: 100% !important;
+  
+  .info-group {
+    display: table-cell;
+    vertical-align: middle;
+    .mascot {
+      width: 25% !important;
+      margin-top: 13%;
+      height: auto !important;
+      float: none !important;
+    }
+    h1 {
+      font-size: 1.25vw;
+      width: 100%;
+      margin: 6.5% auto 13% auto;
+      font-family: 'cooper_hewittsemibold';
+      color: rgb(69, 69, 69);
+      line-height: 1.5;
+      width: 55%;
+
+    }
+
+    h3 {
+      color: rgb(69, 69, 69);
+      font-family: 'cooper_hewittmedium';
+      font-size: 1.25vw;
+      margin: 6.5% auto 0 auto;
+      text-align: center;
+      letter-spacing: .5px;
+
+    }
+
+    h5 {
+      color: rgb(69, 69, 69);
+      font-family: 'cooper_hewittbook' !important;
+      font-size: .75vw;
+      margin: 1.5% 0 6.5% 0;
+      text-align: center !important;
+      font-style: normal!important;
+      letter-spacing: 1px;
+    }
+
+    .arrow {
+      width: 3% !important;
+      height: auto !important;
+      margin-bottom: 6.5% !important;
+      float: none !important;
+
+    }
+  }
+  
+   }
+
+.right {
+  float: right !important;
+}
+
+.left {
+  float: left !important;
+}
+
+
+
+.toggle-background {
+  background: white;
+}
+
+@media screen and (max-width: 600px) {
+.awards-container h3 {
+    width: 97% !important;
+  }
+  .awards-container h1 {
+    font-size: 40px;
+    width: 90%;
+  }
+  .first li, .second li, .third li {
+    float: none !important;
+    width: 100% !important;
+    clear: both;
+    background: white;
+    overflow: auto;
+  }
+
+  .first li:nth-child(2), .second li:first-child {
+    display: none;
+  }
+
+
+
+.arrow {
+
+}
+
+
+
+  .info .info-group h1 {
+    font-size: 10px !important;
+  }
+  .info .info-group h3 {
+    font-size: 10px !important;
+  }
+  .info .info-group h3 {
+    font-size: 8px !important;
+  }
+  .remove li:last-child {
+    display: none;
+  }
+}
+

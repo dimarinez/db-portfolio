@@ -1,0 +1,91 @@
+.projects-container {
+  padding: 0 7.5%;
+  position: relative;
+  background: white;
+  height: 100vh;
+  overflow: hidden;
+
+    h5 {
+    font-family: 'Merriweather', serif;
+    font-style: italic;
+    font-weight: bold;
+    margin-top: 120px;
+    margin-bottom: 18px;
+   float: left;
+    font-size: 12px;
+    width: 25%;
+  }
+
+  section {
+    width: 51%;
+    float: left;
+    clear: left;
+
+    h1 {
+      font-family: 'cooper_hewittheavy';
+      font-size: 66px;
+      margin: 0;
+      padding: 0;
+    }
+
+    p {
+      font-family: 'cooper_hewittbook';
+      font-size: 24px;
+      margin: 30px 0;
+      line-height: 1.5;
+      letter-spacing: 1px;
+
+      span {
+        font-family: 'cooper_hewittmedium';
+      }
+    }
+  }
+
+  .project-image {
+    float:right;
+    position: absolute;
+    right: 10px;
+    top: 120px;
+    img {
+      width: auto;
+      height: auto;
+    }
+  }
+
+}
+
+
+.project-triangle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 25%;
+}
+
+@media screen and (max-width: 600px) {
+
+  .projects-container section {
+    width: 100%;
+    margin: 0 auto 120px auto;
+  }
+  .project-image {
+    display: none;
+  }
+
+  .projects-container {
+    height: auto;
+  }
+
+  .projects-container section h1 {
+    font-size: 45px !important;
+
+  }
+
+  .projects-container section p {
+    font-size: 20px;
+    width: 100%;
+  }
+}
+
+
+

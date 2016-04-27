@@ -1,0 +1,201 @@
+body {
+}
+
+.intro-container {
+  background: white;
+  padding: 0 7.5%;
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  background-attachment:fixed;
+  transform-style: preserve-3d;
+  perspective: 1px;
+  tranform: translateZ(-1px);
+.Dave {
+  position: absolute;
+  right: 132px;
+}
+
+.Dave-logo {
+  left: 49px;
+  position: absolute;
+}
+
+
+
+  .links {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 450px;
+    left: 220px;
+    list-style: none;
+    float: left;
+
+    li {
+      line-height: 1.5;
+      padding-left: 6px;
+      margin-top: 0;
+      padding-bottom:0;
+      padding-top:0;
+      position: relative;
+
+      a {
+        float: left;
+        font-size: 24px;
+        text-decoration: none;
+        color: rgb(154, 154, 154);
+        font-family: 'cooper_hewittbook';
+        letter-spacing: 1px;
+        position: relative;
+        display: block;
+        cursor: pointer;
+
+        &:hover .line-underneath {
+          max-width: 100%;
+          opacity: 1;
+        }
+
+        span {
+          font-family: 'cooper_hewittbold';
+          padding-right: 7px;
+          padding-left: 0 !important;
+        }
+
+
+      }
+    }
+  }
+
+  .social-media {
+    line-height: 1px;
+    position: absolute;
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    right: -140px;
+    top: 243px;
+    width: 493px;
+    .line {
+      height: 1px;
+      width: 162px;
+      float: left;
+      position: relative;
+      background: rgb(154, 154, 154);
+
+    }
+
+   .social {
+    margin: 0;
+    padding: 0;
+
+      li {
+        list-style: none;
+        padding-left: 19px;
+        position:relative;
+        display: inline-block;
+        float: right;
+
+        a {
+          position: relative;
+          display: inline-block;
+          text-decoration: none;
+          letter-spacing: .5px;
+          font-size: 16px;
+          font-family: 'cooper_hewittbook';
+          color:rgb(154, 154, 154);
+
+          &:hover .line-underneath {
+            max-width: 100%;
+          }
+        }
+      
+      }
+
+    
+    }
+
+  }
+}
+
+.top-anchor {
+  bottom: 3px !important;
+}
+
+.social-side {
+  height: 1px !important;
+  bottom: -8px !important;
+}
+
+.grouping:before,
+.grouping:after {
+  content:"";
+  display: table;
+}
+
+.grouping:after {
+  clear:both;
+}
+
+.underline {
+  border-bottom: rgb(154, 154, 154) solid 1px;
+  font-family: 'cooper_hewittmedium';
+  padding-left: 7px;
+  padding-right: 0 !important;
+}
+
+
+.line-underneath {
+  opacity: 1;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 120%;
+  height: 3px;
+  max-width: 30px;
+  background:rgb(154, 154, 154);
+-webkit-transition: all 500ms cubic-bezier(0.175, 0.885, 0.320, 1); /* older webkit */
+-webkit-transition: all 500ms cubic-bezier(0.175, 0.885, 0.320, 1.275); 
+   -moz-transition: all 500ms cubic-bezier(0.175, 0.885, 0.320, 1.275); 
+     -o-transition: all 500ms cubic-bezier(0.175, 0.885, 0.320, 1.275); 
+        transition: all 500ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
+}
+
+
+@media screen and (max-width: 950px) {
+  .links {
+    left: 26%!important;
+    float: none;
+    top: 61% !important;
+    font-size: 2vw !important;
+    display: none;
+  }
+
+  .intro-container .links li a {
+    font-size: 20px !important;
+  }
+
+  .social-media {
+    display: none;
+  }
+
+  .Dave-logo {
+    right: 0!important;
+    left: 0 !important;
+    top: 0 !important;
+    bottom: 0 !important;
+    margin: auto;
+    float: none;  
+    width: 75%;
+  }
+
+  .Dave {
+    display: none;
+    width: 50%;
+    left: 0;
+  }
+  .line-underneath {
+    display: none;
+  }
+}
