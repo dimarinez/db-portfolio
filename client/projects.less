@@ -62,15 +62,32 @@
   width: 25%;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 900px) {
 
   .projects-container section {
     width: 100%;
     margin: 0 auto 120px auto;
   }
-  .project-image {
+.projects-container .project-image {
+    float: none !important;
+    clear:both !important;
+    bottom: 0 !important;
+    height: auto;
+    width: 100%;
+    top: 70%;
+    text-align: center;
     display: none;
+
+
   }
+
+  .projects-container .project-image img {
+    width: 50%;
+    margin: 0 auto;
+
+  }
+
+
 
   .projects-container {
     height: auto;

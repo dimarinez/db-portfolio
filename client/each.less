@@ -73,6 +73,14 @@ position: relative;
 
 }
 
+.heineken {
+  right: 0;
+  margin-left: 0;
+  margin-right:0;
+  position: absolute;
+  top: 0;
+}
+
 .nike {
   top: 80px !important;
 }
@@ -85,7 +93,7 @@ position: relative;
 }
 
 .project2 {
-  background-image: url(/img/heineken.png);
+  background-image: url(/img/heineken-background.png);
   background-size: 100% 100%;
   background-attachment: fixed;
 }
@@ -97,13 +105,13 @@ position: relative;
 }
 
 .project4 {
-  background-image: url(/img/glassy.png);
+  background-image: url(/img/glassybaby-background.png);
   background-size: 100% 100%;
   background-attachment: fixed;
 }
 
 .project5 {
-  background-image: url(/img/wowwee.png);
+  background-image: url(/img/wowwee-background.png);
   background-size: 100% 100%;
   background-attachment: fixed;
 }
@@ -115,4 +123,19 @@ position: relative;
 
 .clear-left {
   clear: left;
+}
+
+
+
+@media screen and (max-width: 1200px) {
+  .project2 {
+    background-size: auto 100%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .logos {
+    display: none;
+  }
+
 }
