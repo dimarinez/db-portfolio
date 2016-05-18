@@ -23,3 +23,5 @@ less
 mrt:jquery-easing
 iron:router
 percolate:momentum
+percolate:momentum-iron-router
+check
