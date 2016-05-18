@@ -1,36 +1,263 @@
-.scroller {
-  -webkit-overflow-scrolling: touch;
-  scroll-snap-type: mandatory;
-  /* older spec implementation */
-  scroll-snap-destination: 0% 100%;
-  scroll-snap-points-x: repeat(100%);
+
+
+.fullpage {
 
 }
 
+
+
+.preload {
+  z-index: 7;
+  top: 0;
+  left: 0;
+  background: white;
+  transform:translateX(100%);
+  -webkit-transform:translateX(100%);
+  -moz-transform:translateX(100%);
+  -o-transform:translateX(100%);
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  img {
+    padding-bottom: 100px;
+    width: 30%;
+    -webkit-animation:preload 7s infinite;
+    -moz-animation:preload 7s infinite;
+    -o-animation:preload 7s infinite;
+    animation:preload 7s infinite;
+  }
+
+}
+
+@-webkit-keyframes preload {
+  0%, 100% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes preload {
+  0%, 100% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+.iframe-container {
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+
+iframe {
+  width:100%;
+  height: 109vh;
+  position: relative;
+  transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  z-index: 3;
+  top: -63px;
+  overflow: hidden;
+  left: -2px;
+}
+
+.go-back {
+  position: absolute;
+  width: 50px;
+  top: 50px;
+  left: 50px;
+  z-index: 5;
+  cursor: pointer;
+  background: none;
+  transition: background .3s ease-in-out;
+  -webkit-transition: background .3s ease-in-out;
+
+  &:hover {
+
+  }
+
+}
+
+.go-back1 {
+  position: absolute;
+  width: 50px;
+  top: 50px;
+  left: 50px;
+  z-index: 4;
+  cursor: pointer;
+
+  transition: background .3s ease-in-out;
+  -webkit-transition: background .3s ease-in-out;
+  &:hover {
+
+  }
+
+}
+
+.go-back2 {
+  position: absolute;
+  width: 50px;
+  top: 50px;
+  left: 50px;
+  z-index: 4;
+  cursor: pointer;
+  transition: background .3s ease-in-out;
+  -webkit-transition: background .3s ease-in-out;
+  &:hover {
+  }
+
+}
+
+.go-back3 {
+  position: absolute;
+  width: 50px;
+  top: 50px;
+  left: 50px;
+  z-index: 4;
+  cursor: pointer;
+  transition: background .3s ease-in-out;
+  -webkit-transition: background .3s ease-in-out;
+  &:hover {
+  }
+
+}
+
+.go-back4 {
+  position: absolute;
+  width: 50px;
+  top: 50px;
+  left: 50px;
+  z-index: 4;
+  cursor: pointer;
+  transition: background .3s ease-in-out;
+  -webkit-transition: background .3s ease-in-out;
+  &:hover {
+  }
+
+}
+
+.go-back5 {
+  position: absolute;
+  width: 50px;
+  top: 50px;
+  left: 50px;
+  z-index: 4;
+  cursor: pointer;
+  transition: background .3s ease-in-out;
+  -webkit-transition: background .3s ease-in-out;
+  &:hover {
+  }
+
+}
+
+
+
+.flipOut{
+     transform: translateX(-100%);
+  -webkit-transform: translateX(-100%);
+  -moz-transform: translateX(-100%);
+  -o-transform: translateX(-100%);
+}
+
+.wrapped-up {
+    transition: all .3s ease-in-out;
+  -webkit-transition: all .3s ease-in-out;
+}
+
+.reveal-case {
+  cursor: pointer;
+}
+
+.reveal-case1 {
+  cursor: pointer;
+}
+
+.reveal-case2 {
+  cursor: pointer;
+}
+
+.reveal-case3 {
+  cursor: pointer;
+}
+
+.reveal-case4 {
+  cursor: pointer;
+}
+
+.reveal-case5 {
+  cursor: pointer;
+}
+
+.loading {
+    background: url('../img/ico_loading.gif') no-repeat center center;
+
+}
+
+.wrapper {
+  position: relative;
+  perspective: 1px;
+  -webkit-perspective: 1px;
+  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+}
 .each-container {
-height: 100vh;
+height:777px;
 padding: 0 7.5%;
 background: lightgray;
 position: relative;
-  
-  .each-title {
+overflow: hidden;
 
+
+  .each-title {
+    position: relative;
+    z-index: 9;
     h1 {
+      position: relative;
+      z-index: 7;
       font-size: 36px;
+      width: 75%;
       margin-top: 60px;
       font-family: 'cooper_hewittheavy';
       margin-bottom: 0;
       color: white;
       line-height: 1.1;
       letter-spacing: 3px;
+       transition: all .3s ease-in;
+       -webkit-transition: all .3s ease-in;
+       -moz-transition: all .3s ease-in;
+       -o-transition: all .3s ease-in;
+         transform: translate(0 , 10px);
+     -webkit-transform: translate(0 , 10px);
+     -moz-transform: translate(0 , 10px);
+     -o-transform: translate(0 , 10px);
     }
 
     p {
+      position: relative;
+      z-index: 7;
       font-family: 'cooper_hewittbook';
       color: white;
       font-size: 18px;
+      width: 65%;
       margin: 18px 0;
       letter-spacing: .5px;
+      transition: all .3s ease-in;
+      -webkit-transition: all .3s ease-in;
+      -moz-transition: all .3s ease-in;
+      -o-transition: all .3s ease-in;
+        transform: translate(0 , 10px);
+    -webkit-transform: translate(0 , 10px);
+    -moz-transform: translate(0 , 10px);
+    -o-transform: translate(0 , 10px);
     }
 
     ul {
@@ -38,10 +265,23 @@ position: relative;
       padding: 0;
     li {
       list-style: none;
+      position: relative;
+      z-index: 7;
       float: left;
       padding-right: 45px;
+        transition: all .3s ease-in;
+        -webkit-transition: all .3s ease-in;
+        -moz-transition: all .3s ease-in;
+        -o-transition: all .3s ease-in;
+          transform: translate(0 , 10px);
+      -webkit-transform: translate(0 , 10px);
+      -moz-transform: translate(0 , 10px);
+      -o-transform: translate(0 , 10px);
+
 
       a {
+        position: relative;
+        z-index: 10;
         text-decoration: none;
         font-family: 'Merriweather', serif;
         font-style: italic;
@@ -63,8 +303,13 @@ position: relative;
   .logos {
     float: right;
     position: absolute;
-    right: 90px;
+    right: 7.5%;
+    z-index: 4;
     top: 60px;
+          transition: all .3s ease-in;
+        -webkit-transition: all .3s ease-in;
+        -moz-transition: all .3s ease-in;
+        -o-transition: all .3s ease-in;
 
     img {
 
@@ -78,7 +323,76 @@ position: relative;
   margin-left: 0;
   margin-right:0;
   position: absolute;
-  top: 0;
+  opacity: 0;
+  bottom: 0;
+    transition: all .5s ease-in;
+    -webkit-transition: all .5s ease-in;
+    -moz-transition: all .5s ease-in;
+    -o-transition: all .5s ease-in;
+           transform: translate(0 , 10px);
+  -webkit-transform: translate(0 , 10px);
+  -moz-transform: translate(0 , 10px);
+  -o-transform: translate(0 , 10px);
+
+}
+
+.hand {
+  bottom: 0 !important;
+  position: absolute;
+  max-width: 55% !important;
+  right: 15%;
+}
+
+.project7 {
+  background-image: url(/img/Kaiser-bg.png);
+  background-size: 100% auto;
+  background-color: white;
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+
+.shadows {
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  position: absolute;
+  z-index: 0;
+  opacity: 0;
+  bottom: 0;
+  max-width: 1004px;
+  max-height: 625px;
+       transform: translate(0 , -20px);
+  -webkit-transform: translate(0 , -20px);
+  -moz-transform: translate(0 , -20px);
+  -o-transform: translate(0 , -20px);
+     transition: all .7s ease-in;
+    -webkit-transition: all .7s ease-in;
+    -moz-transition: all .7s ease-in;
+    -o-transition: all .7s ease-in;
+
+}
+
+.nikes {
+   margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+   position: absolute;
+  z-index: 0;
+  bottom: 0;
+  max-width: 1004px;
+  max-height: 625px;
+     transform: translate(0 , 10px);
+  -webkit-transform: translate(0 , 10px);
+  -moz-transform: translate(0 , 10px);
+  -o-transform: translate(0 , 10px);
+    transition: all .7s ease-in;
+    -webkit-transition: all .7s ease-in;
+    -moz-transition: all .7s ease-in;
+    -o-transition: all .7s ease-in;
+
+
 }
 
 .nike {
@@ -86,34 +400,165 @@ position: relative;
 }
 
 .project1 {
-  background-image: url(/img/image-TheDesign.png);
-  background-size: 100% 100%;
-  background-attachment: fixed;
+  background-color: rgb(31, 163, 216);
+  position: relative;
+  overflow: hidden;
+}
+
+.project6 {
+  background-image: url(/img/Ernie-bg.png);
+  background-size:  cover;
+  background-position: bottom;
+
+}
+
+.glassy {
+  position: absolute;
+  bottom: 120px;
+  z-index: 10;
+  margin-left: auto;
+  margin-right: auto;
+  opacity: 0;
+  left: 0;
+  right: 0;
+   -webkit-transition: all .5s ease-in;
+  transition: all .5s ease-in;
+  -moz-transition: all .5s ease-in;
+  -o-transition: all .5s ease-in;
+       transform: translate(0 , 10px);
+  -webkit-transform: translate(0 , 10px);
+  -moz-transform: translate(0 , 10px);
+  -o-transform: translate(0 , 10px);
+
+}
+
+@-webkit-keyframes shadow {
+ 0% {
+-webkit-filter: drop-shadow(6px 6px 6px rgba(0,0,0,0.5));
+    filter: url(#drop-shadow);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444')";
+    filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444')";
+
+  }
+
+   50% {
+-webkit-filter: drop-shadow(20px 20px 30px rgba(0,0,0,0.5));
+    filter: url(#drop-shadow);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=15, OffY=15, Color='#444')";
+    filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=15, OffY=15, Color='#444')";
+  }
+
+   100% {
+-webkit-filter: drop-shadow(6px 6px 6px rgba(0,0,0,0.5));
+    filter: url(#drop-shadow);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444')";
+    filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444')";
+  }
+}
+
+@keyframes shadow {
+ 0% {
+-webkit-filter: drop-shadow(6px 6px 6px rgba(0,0,0,0.5));
+    filter: url(#drop-shadow);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444')";
+    filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444')";
+
+  }
+
+   50% {
+-webkit-filter: drop-shadow(20px 20px 30px rgba(0,0,0,0.5));
+    filter: url(#drop-shadow);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=15, OffY=15, Color='#444')";
+    filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=15, OffY=15, Color='#444')";
+  }
+
+   100% {
+-webkit-filter: drop-shadow(6px 6px 6px rgba(0,0,0,0.5));
+    filter: url(#drop-shadow);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444')";
+    filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444')";
+  }
+}
+
+
+
+.up {
+   transform: translate(0 , 0);
+  -webkit-transform: translate(0 , 0);
+  -moz-transform: translate(0 , 0);
+  -o-transform: translate(0 , 0);
+}
+
+.project1 {
+  position: relative;
+  transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  overflow: hidden;
+  background-repeat: no-repeat;
+}
+
+
+.Ernie {
+  transition: all .5s ease-in;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  max-width: 50%;
+  bottom: 50px;
+  position: absolute;
+  z-index: 1;
 
 }
 
 .project2 {
   background-image: url(/img/heineken-background.png);
-  background-size: 100% 100%;
-  background-attachment: fixed;
+  background-position: bottom;
+  background-color: #2e4a2a;
+  background-size:  100% auto;
+  position: relative;
+  z-index: 4;
+  transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  background-repeat: no-repeat;
 }
 
 .project3 {
-  background-image: url(/img/Hero2.png);
-  background-size: 100% 100%;
-  background-attachment: fixed;
+  background-image: url(/img/porsche_blackbg.png);
+  background-size: 100% auto;
+  position: relative;
+  transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  background-position: center right;
+  background-repeat: no-repeat;
+  background-color: black;
+
+}
+
+.Ernie-logo {
+  top: 6% !important;
 }
 
 .project4 {
   background-image: url(/img/glassybaby-background.png);
-  background-size: 100% 100%;
-  background-attachment: fixed;
+  background-size: cover;
+  background-position: bottom;
+  position: relative;
+  transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  background-repeat: no-repeat;
+  background-color: #b15f29;
 }
 
 .project5 {
   background-image: url(/img/wowwee-background.png);
-  background-size: 100% 100%;
-  background-attachment: fixed;
+  background-size: cover;
+  background-position: bottom;
+  position: relative;
+  transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  background-repeat: no-repeat;
+  background-color: #131319;
 }
 
 .white {
@@ -121,21 +566,293 @@ position: relative;
   height: 1px !important;
 }
 
+
 .clear-left {
   clear: left;
 }
 
 
+.porsche-iphone {
+  position: absolute;
+  right: 0;
+  top: 10%;
+  z-index: 1;
+  width: auto;
+  opacity: 0;
+   -webkit-transition: all .5s ease-in;
+  transition: all .5s ease-in;
+  -moz-transition: all .5s ease-in;
+  -o-transition: all .5s ease-in;
+       transform: translate(0 , 10px);
+  -webkit-transform: translate(0 , 10px);
+  -moz-transform: translate(0 , 10px);
+  -o-transform: translate(0 , 10px);
+}
 
-@media screen and (max-width: 1200px) {
+.green {
+  background: #12A39A !important;
+  height: 1px !important;
+}
+
+
+.project7 .each-title h1, 
+.project7 .each-title p,
+.project7 .each-title li a {
+  color: #12A39A !important;
+}
+.ErnieBall-logo, .ErnieBall, .hand, .Weta, .Kaiser {
+   opacity: 0;
+   -webkit-transition: all .5s ease-in;
+  transition: all .5s ease-in;
+  -moz-transition: all .5s ease-in;
+  -o-transition: all .5s ease-in;
+       transform: translate(0 , 10px);
+  -webkit-transform: translate(0 , 10px);
+  -moz-transform: translate(0 , 10px);
+  -o-transform: translate(0 , 10px);
+}
+
+.hand {
+  max-width: 500px !important;
+}
+
+
+
+.project8 {
+  background-image: url(/img/Weta-bg.png);
+  background-size: 100% auto;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-color: black;
+}
+
+.project8 .each-title li a,
+.project8 .each-title h1,
+.project8 .each-title p {
+  color: #7b6844 !important;
+}
+
+
+.robot {
+  position: absolute;
+  right: 500px;
+  width: 400px;
+  opacity: 0;
+  bottom: 140px;
+  z-index: 1;
+  -webkit-transition: all .5s ease-in;
+  transition: all .5s ease-in;
+  -moz-transition: all .5s ease-in;
+  -o-transition: all .5s ease-in;
+       transform: translate(0 , 10px);
+  -webkit-transform: translate(0 , 10px);
+  -moz-transform: translate(0 , 10px);
+  -o-transform: translate(0 , 10px);
+}
+
+
+
+
+
+.ipad {
+   position: absolute;
+  right: 0;
+
+  bottom: 0px;
+  opacity: 0;
+  z-index: 1;
+  width: 1200px;
+    -webkit-transition: all .5s ease-in;
+  transition: all .5s ease-in;
+  -moz-transition: all .5s ease-in;
+  -o-transition: all .5s ease-in;
+       transform: translate(0 , 10px);
+  -webkit-transform: translate(0 , 10px);
+  -moz-transform: translate(0 , 10px);
+  -o-transform: translate(0 , 10px);
+  transition-delay: .3s;
+  -webkit-transition-delay: .3s;
+}
+
+.main-logo {
+  z-index: 4;
+}
+
+@media screen and (max-width: 1100px) {
   .project2 {
-    background-size: auto 100%;
+    background-size: 100% auto;
+  }
+
+  .porsche-iphone {
+    top: auto;
+    bottom: 0;
+    width: auto;
   }
 }
 
-@media screen and (max-width: 800px) {
-  .logos {
+@media screen and (max-width: 1050px) {
+  .porsche-iphone {
+    left: 0;
     display: none;
+    bottom: 0;
+  }
+}
+
+@media screen and (max-width: 900px) {
+
+  .hand {
+    max-width: 400px !important;
+  }
+   .heineken {
+    top: auto;
+    right: 0;
+    bottom: 0 !important;
+    width: 80% !important;
   }
 
+  .porsche-iphone {
+    left: 0;
+    display: none;
+    bottom: 0;
+  }
+
+
+
+
+
+
+
+  .stop {
+    overflow: hidden;
+  }
+
+  .each-container .each-title h1 {
+    font-size: 28px;
 }
+  .logos {
+    top : 30px !important;
+
+  }
+
+  .bottle-cap {
+    top: 22px !important;
+  }
+
+  .logos img {
+    float:right;
+    width: 50%;
+  }
+
+  .main-logo {
+    width: 200px;
+  }
+
+  .robot {
+  bottom: 25px;
+  right:0;
+  left: 0;
+  margin-left: auto;
+  margin-right: auto;
+
+  }
+
+
+
+  .ipad {
+    width: 100%;
+    top: auto;
+    right: -50px;
+
+  }
+
+
+}
+
+@media screen and (max-width: 900px) {
+
+  .hand {
+  width: 45%;
+  right: 10% !important;
+}
+  .glassy {
+    bottom: 60px !important;
+  }
+  .snap-it-up {
+    height: 600px;
+  }
+  .nikes, .shadows {
+    bottom: 0px !important;
+    max-width: 760px;
+    max-height: 473px;
+  }
+
+  .each-container {
+   height: 600px;
+   }
+  .each-title h1 {
+    font-size: 15px !important;
+    width: 75%;
+    margin-top: 30px !important;
+  }
+
+
+  .each-title p {
+    font-size: 12px !important;
+    width: 75% !important;
+
+  }
+
+
+
+}
+
+
+@media screen and (max-width: 400px) { 
+ 
+
+
+  .snap-it-up {
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: mandatory;
+    /* older spec implementation */
+    scroll-snap-destination: 100% 0%;
+    scroll-snap-points-y: repeat(100%);
+    -webkit-scroll-snap-coordinate: 0% 0%;
+    scroll-snap-coordinate: 100% 100%;
+  }
+  .each-container .each-title ul li {
+    padding-right: 25px;
+  }
+
+  .Ernie {
+  max-width: 80%;
+  bottom: 120px !important;
+}
+
+  .heineken {
+    top: auto;
+    right: 0;
+    left: 0;
+    margin-left: auto;
+    margin-right: auto;
+    bottom: 0 !important;
+    width: 100%;
+  }
+   .ipad {
+    width: 100%;
+    right: 0;
+    bottom: 0;
+  }
+
+  .robot {
+    left: 50px;
+    right: auto;
+    bottom: 50px;
+  }
+}
+
+
+

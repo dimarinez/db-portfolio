@@ -1,5 +1,35 @@
 
+.cliental .row-fade {
+      opacity: 0;
+          transform: translateX(-20px);
+          -webkit-transform: translateX(-20px);
+          transition: all .3s ease-in-out;
+          -webkit-transition: all .3s ease-in-out;
 
+          &:nth-child(1) li {
+            border-top: 1px black solid;
+          }
+
+}
+
+.agency .row-fade {
+          opacity: 0;
+          transform: translateX(-20px);
+          -webkit-transform: translateX(-20px);
+          transition: all .3s ease-in-out;
+          -webkit-transition: all .3s ease-in-out;
+
+          &:nth-child(1) li {
+            border-top: 1px black solid;
+          }
+
+          &:nth-child(1) li:last-child {
+            border-top: 1px black solid;
+          }
+
+
+
+}
 .service-container {
   padding: 0 7.5%;
   
@@ -37,44 +67,40 @@
       font-size: 25px;
       margin-top: 18px;
       margin-bottom: 42px;
+      font-weight: normal;
     }
   .cliental {
-    width: 100%;
     padding: 0;
     margin-bottom: 96px;
 
-    li {
-      width: 20.3%;
-      float: left;
-      list-style: none;
-      margin-right: 5.5%;
-      font-family: 'cooper_hewittbook';
-      letter-spacing: 1px;
 
-      &:last-child {
-        margin-right: 0;
-      }
-      ul {
-      margin: 0;
-      padding: 0;  
-      position: relative;
         li {
+          float: left;
           padding: 18px 0 18px 10px;
-          border-top: 1px black solid;
-          display: block;
-          width: 100%;
-          list-style: none;
-
-          &:last-child {
           border-bottom: 1px black solid;
-        }
+          display: block;
+          width: 22.8%;
+          font-family: 'cooper_hewittbook';
+          letter-spacing: 1px;
+          margin-right: 1.5%;
+          list-style: none;
+          opacity: 0;
+          transition: all .4s ease-in-out;
+          -webkit-transition: all .4s ease-in-out;
+
+      
+
+            &:nth-child(4n) {
+            margin-right: 0;
+          }
+ 
+
         }
 
       }
     }
 
-  }
-}
+
 
   .agencies {
     clear:both;
@@ -94,87 +120,115 @@
     }
 
   .agency {
-    width: 100%;
     padding: 0;
     margin: 0;
-    li {
-      width: 20.3%;
-      float: left;
-      list-style: none;
-      font-family: 'cooper_hewittbook';
-      letter-spacing: 1px;
 
-     margin-right: 5.5%;
-      &:last-child {
-        margin-right: 0;
-      }
-
-
-      ul {
-      margin: 0;
-      padding: 0;
-      position: relative;
+   
         li {
+          float: left;
+          margin-right: 1.5%;
           padding: 18px 0 18px 10px;
-          border-top: 1px black solid;
+          border-bottom: 1px black solid;
           list-style: none;
           display: block;
-          width: 100%;
+          width: 22.8%;
           font-family: 'cooper_hewittbook';
           letter-spacing: 1px;
+          opacity: 0;
+          transition: all .4s ease-in-out;
+          -webkit-transition: all .4s ease-in-out;
+
+          &:nth-child(4n) {
+            margin-right: 0;
+          }
 
 
-          &:last-child {
-          border-bottom: 1px black solid;
-        }
-        }
-
+    
       }
     }
 
   }
 }
+
+@media screen and (max-width: 1108px) {
+  .cliental li, .agency li {
+    width: 30.5% !important;
+  }
+  .row-fade li:last-child {
+    margin-right: 1.5% !important;
+  }
+
+  .cliental .row-fade:first-child li:first-child {
+  }
+  .cliental .row-fade:first-child li:nth-child(4) {
+    border-top: none;
 }
 
+.agency .row-fade:first-child li:nth-child(4) {
+  border-top: none;
+}
+
+.agency .row-fade:nth-child(4) li:last-child {
+}
+
+.agency li:nth-child(16) {
+  border-bottom: none !important;
+}
+
+}
 @media screen and (max-width: 900px) {
+  .cliental .row-fade:last-child li:nth-child(2) {
+  }
+
+  .cliental .row-fade:first-child li:nth-child(3) {
+    border-top: none;
+  }
+
+   .agency .row-fade:first-child li:nth-child(3) {
+    border-top: none;
+  }
+
+  .agency .row-fade:last-child li:first-child {
+
+}
+.agency li:nth-child(17) {
+  border-bottom: none !important;
+}
+
+.cliental li:nth-child(30) {
+  border-bottom: none !important;
+}
+.cliental li:nth-child(2n), .agency li:nth-child(2n) {
+  float: right !important;
+margin-right:0 !important;
+}
+
+.cliental {
+  margin: 0 auto;
+}
+
+.service-container h5 {
+  margin-top: 60px;
+}
+
 
   
 .service-container {
-  text-align: center;
 }
 
 .service-container p {
-  margin: 0 auto;
   width: 75%;
 }
   .cliental li, .agency li {
-    width: 49% !important;
-    float: left !important;
-    margin-right:0 !important; 
+    width: 45% !important;
+    font-size: 10px;
+    float: left;
+    margin-right:2.4%; 
     position: relative;
   }
 
 
 
-
-  .service-container .clients .cliental li ul li {
-    padding: 18px 0 !important;
-    border-bottom: 0px !important;
-    width: 100% !important;
-    float: left;
-    font-size: 10px;
-
-  }
-
-  .service-container .agencies .agency li ul li {
-    padding: 18px 0 !important;
-    border-bottom: 0px !important;
-    width: 100% !important;
-    float: left;
-    font-size: 10px;
-  }
-
- 
 
 
   .clients p, .agencies p {
@@ -182,16 +236,15 @@
   }
 
    .clients h1, .agencies h1 {
-    font-size: 40px;
+    font-size: 30px;
   }
-}
 
-.small-triangle {
+
+
+}
+  .small-triangle {
   position: absolute;
   bottom: 0;
   right: 0;
   width: 100%;
 }
-
-
-

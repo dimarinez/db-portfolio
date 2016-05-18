@@ -1,13 +1,10 @@
 .paying-container {
-  background-image: url(/img/Bottom.png);
-  background-size: 200% 100%;
   position: relative;
-  background-color: #f9f9f9;
   clear: both;
   display: block;
   height: auto;
-  background-position: -150px 100px;
-  background-repeat: no-repeat;
+  background: #edeeee;
+  overflow: hidden;
 
    h5 {
     margin-left: 7.5%;
@@ -15,9 +12,12 @@
     font-family: 'Merriweather', serif;
     font-style: italic;
     font-weight: bold;
-    margin-top: 240px !important;
     padding-left: 6px;
     margin-bottom: 18px;
+    margin-top: 120px;
+    position: relative;
+    z-index: 1;
+
   }
 
   h1 {
@@ -25,7 +25,11 @@
       font-size: 60px;
       margin: 0 7.5%;
       padding: 0;
+      width: ;
       letter-spacing: 3px;
+      position: relative;
+      z-index: 1;
+
   }
 
    p {
@@ -34,8 +38,11 @@
       font-size: 25px;
       margin-top: 18px;
       margin-bottom: 60px;
-       margin-left: 7.5%;
-  margin-right: 7.5%;
+      margin-left: 7.5%;
+      margin-right: 7.5%;
+      position: relative;
+      z-index: 1;
+
     }
 
     ul { 
@@ -43,11 +50,15 @@
       perspective: 1000px;
       transform-style: preserve-3d;
       transform: translateZ(-100px);
-      margin: 0;
+      -webkit-transform: translateZ(-100px);
+      -webkit-transform-style: preserve-3d;
+      -webkit-perspective: 1000px;
+      margin: 0 0 60px 0;
 
       li {
         width: 23.5%;
         margin-bottom: 2%;
+        border-width: 0px;
         margin-left: 2%;
         float: left;
         background: rgba(255, 255, 255, 0.7);
@@ -55,10 +66,6 @@
         display: block;
         list-style: none;
         position: relative;
-        transition: all .3s ease-in-out;
-        -webkit-transition: all .3s ease-in-out;
-        -moz-transition: all .3s ease-in-out;
-        -o-transition: all .3s ease-in-out;
         cursor: pointer;
         overflow: hidden;
 
@@ -119,7 +126,6 @@
           width: 100%;
           overflow-y: hidden;
           overflow-x: hidden; 
-          background: rgba(255, 255, 255, 0.3);
 
           .img {
             position: absolute;
@@ -182,49 +188,118 @@
     }
 }
 
-.bottom-paying {
+.fadeUp {
+          transform:translateY(20px);
+        -webkit-transform:translateY(20px);
+      -moz-transform:translateY(20px);
+      -o-transform:translateY(20px);
+      opacity: 0;
+              transition: all .7s ease;
+        -webkit-transition: all .7s ease;
+        -moz-transition: all .7s ease;
+        -o-transition: all .7s ease;
+
+}
+
+.fadeUp1 {
+          transform:translateY(20px);
+        -webkit-transform:translateY(20px);
+      -moz-transform:translateY(20px);
+      -o-transform:translateY(20px);
+      opacity: 0;
+              transition: all .7s ease;
+        -webkit-transition: all .7s ease;
+        -moz-transition: all .7s ease;
+        -o-transition: all .7s ease;
+
+}
+
+.fadeUp2 {
+          transform:translateY(20px);
+        -webkit-transform:translateY(20px);
+      -moz-transform:translateY(20px);
+      -o-transform:translateY(20px);
+      opacity: 0;
+              transition: all .7s ease;
+        -webkit-transition: all .7s ease;
+        -moz-transition: all .7s ease;
+        -o-transition: all .7s ease;
+
+}
+
+.fadeUp3 {
+          transform:translateY(20px);
+        -webkit-transform:translateY(20px);
+      -moz-transform:translateY(20px);
+      -o-transform:translateY(20px);
+      opacity: 0;
+              transition: all .7s ease;
+        -webkit-transition: all .7s ease;
+        -moz-transition: all .7s ease;
+        -o-transition: all .7s ease;
+
+}
+
+.rise {
+  position: relative;
+  z-index: 3;
+  margin-bottom: 60px;
+}
+.triangle-bottom {
+  position: absolute;
+  top: 0px;
+  left: -.5px;
+  z-index: 0;
+  height: auto;
+  width: 100%;
+}
+
+
+.footer-triangle {
+
+position: absolute;
+bottom: 0;
+z-index: 1;
+width: 1500px;
+height: auto;
+}
+
+.max {
+    width: 75% !important;
+  }
+
+.bottom-bottom {
   position: absolute;
   bottom: 0;
-  left: 0;
-  z-index: 0;
-  width: 100%;
-  height: 66%;
+  z-index: 1;
+  width: 805px;
 }
 
 .background-images {
-  position: relative !important;
+  position: absolute;
   z-index: 0;
-  left: 0;
-  bottom: 0;
-  top: 0;
-  right: 0;
+  display: block;
+  right: 0px !important;
   width: 100% !important;
   height: 100% !important;
   transition: all 7s ease;
   -webkit-transition: all 7s ease;
   -moz-transition: all 7s ease;
   -o-transition: all 7s ease;
-
-
 }
 
 
 
 @media screen and (max-width: 1075px) {
 
-  .below-footer {
-    height: 300px;
-  }
-  .footer-container h6 {
-  padding-top: 180px !important;
-}
+
+
 .paying-container ul {
   height: auto;
 }
 
    .paying-container h5 {
-    margin-top: 0;
-  
+  margin-top: 60px;
   }
 
   .paying-container ul li {
@@ -265,10 +340,7 @@
 
   }
 
-.each-contact {
 
-  font-size: 12px;
-}
 
 
   
@@ -276,16 +348,9 @@
 
 
 @media screen and (max-width: 900px) {
-   .below-footer {
-    height: 275px;
-  }
- 
-.copyright {
 
-  }
-.footer-container h6 {
-  padding-top: 140px !important;
-}
+ 
+
 
 .line-underneath {
   display: none;
@@ -295,9 +360,7 @@
 
 @media screen and (max-width: 800px) {
 
-   .below-footer {
-    height: 280px;
-  }
+
 
    .paying-container ul li {
     width: 49% !important;
@@ -337,9 +400,13 @@
 
   }
 
-   .paying-container ul li:nth-child(10) .img img{
+   .paying-container ul li:nth-child(9) .img img{
     
     width: 75%;
+  }
+
+  .max {
+    width: 75% !important;
   }
 
   .paying-container ul li:nth-child(11) {
@@ -369,20 +436,7 @@
     display: none;
   }
 
-  .paying-container h1 {
-    font-size: 40px;
-  }
 
-  .paying-container {
-  background-position: 0 350px;
-}
-
-.footer-container p {
-  width: 80% !important;
-}
-
-.below-footer {
-}
 
 .paying-container p {
   width: 80% !important;
@@ -391,9 +445,21 @@
 
 
 @media screen and (max-width: 500px) {
-  .below-footer {
-  width: 100%;
-  height: 240px;
-  background: none;
+
+  .ny {
+    left: -54px !important;
+  }
+
+  .paying-container {
+    margin-top: 0px !important;
+  }
+  .background-images {
+    width: auto !important;
+  }
+
+  .paying-container h1 {
+    font-size: 30px;
 }
+
+
 }

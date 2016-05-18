@@ -7,25 +7,32 @@
   background-color: rgb(131, 130, 130);
 
   h5 {
-    margin-top: 120px;
+    margin-top: 90px;
     font-family: 'Merriweather', serif;
     font-style: italic;
     font-weight: bold;
     color: white;
     margin-bottom: 0;
     padding-left: 87px;
+    visibility: hidden;
     font-size: 12px;
+
+
   }
   h1 {
     text-align: center;
     margin: 0 auto;
     padding: 0;
-    width: 85%;
     font-size: 90px;
     letter-spacing: 4px;
     font-family: 'Merriweather', serif;
     color: white;
+
+
   }
+
+
+
 
   h3 {
     width: 66%;
@@ -37,24 +44,98 @@
     letter-spacing: .5px;
     font-size: 24px;
     line-height: 36px;
+
+
   }
 
   .signature {
     text-align: center;
-    margin: 60px 0;
+    margin: 60px auto;
+
   }
 }
 
 .about-triangle {
   position: absolute;
-  width: 100%;
+  width: 150.3%;
   height: 125%;
-  right: 0;
+  left: 0;
   top: 0;
-  z-index: 4;
+  z-index: 7;
+  
 }
 
-@media screen and (max-width: 1000px) {
+.fadeIn {
+  opacity: 0 !important;
+  transform: translate(0 , 20px);
+  -webkit-transform: translate(0 , 20px);
+  -moz-transform: translate(0 , 20px);
+  -o-transform: translate(0 , 20px);
+  transition: all .7s ease;
+}
+
+.fadeIn1 {
+  opacity: 0;
+  transform: translate(0 , 20px);
+  -webkit-transform: translate(0 , 20px);
+  -moz-transform: translate(0 , 20px);
+  -o-transform: translate(0 , 20px);
+  transition: all .7s ease;
+}
+
+
+.fadeIn2 {
+  opacity: 0;
+  transform: translate(0 , 20px);
+  -webkit-transform: translate(0 , 20px);
+  -moz-transform: translate(0 , 20px);
+  -o-transform: translate(0 , 20px);
+  transition: all .7s ease;
+}
+
+
+.fadeIn3 {
+  opacity: 0;
+  transform: translate(0 , 20px);
+  -webkit-transform: translate(0 , 20px);
+  -moz-transform: translate(0 , 20px);
+  -o-transform: translate(0 , 20px);
+  transition: all .7s ease;
+}
+
+
+.fadeIn4 {
+  opacity: 0;
+  transform: translate(0 , 20px);
+  -webkit-transform: translate(0 , 20px);
+  -moz-transform: translate(0 , 20px);
+  -o-transform: translate(0 , 20px);
+  transition: all .7s ease;
+}
+
+
+.fadeIn5 {
+  opacity: 0;
+  transform: translate(0 , 20px);
+  -webkit-transform: translate(0 , 20px);
+  -moz-transform: translate(0 , 20px);
+  -o-transform: translate(0 , 20px);
+  transition: all .7s ease;
+}
+
+.fadeIn6 {
+  opacity: 0;
+  transform: translate(0 , 20px);
+  -webkit-transform: translate(0 , 20px);
+  -moz-transform: translate(0 , 20px);
+  -o-transform: translate(0 , 20px);
+  transition: all .7s ease;
+}
+
+
+
+
+@media screen and (max-width: 1100px) {
   .about-container h1 {
     font-size: 60px;
   }
@@ -65,12 +146,27 @@
 
 }
 
+@media screen and (max-width: 800px) {
+  .about-container h1 {
+    font-size: 45px;
+  }
+}
+
 
 @media screen and (max-width: 600px) {
 
+
+  .signature {
+    margin: 30px auto !important;
+  }
+
+ 
+   .about-container h1 {
+    font-size: 47px;
+  }
+
   .about-container h5 {
     padding-left: 0; 
-    font-size: 7px;
 
   }
 
@@ -79,8 +175,32 @@
     width: 100%;
   }
   .about-container h3 {
+    margin-top: 18px;
     width: 97%;
     font-size: 15px;
+
+  }
+}
+
+@media screen and (max-width: 420px) {
+    .signature embed {
+      width: 30%;
+  }
+   .about-container h5{
+    margin-top: 60px !important;
+   }
+  .about-container h1 {
+    font-size: 20px;
+    width: 98%;
+    margin-bottom: 10px;
+    margin-top: 18px;
+  }
+
+  .about-container h3 {
+    width: 97%;
+    font-size: 13px;
+    line-height: 24px !important;
+    margin-bottom: 10px;
   }
 }
 

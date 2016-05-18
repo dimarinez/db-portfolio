@@ -1,5 +1,5 @@
-<template name="intro">
-  <div class="intro-container grouping">
+ <template name ="intro">
+ <div class="intro-container grouping" id="intro">
     <img src="/img/copy.png" class="Dave-logo"/>
     <img src="/img/Dave.png" class="Dave"/>
     <ul class="links">
@@ -12,12 +12,20 @@
       <div class="social-media">
         <div class="line"></div>
         <ul class= "social">
-          <li><a href="#">Mixcloud<div class="line-underneath social-side"></div></a></li>
-          <li><a href="#">Instagram<div class="line-underneath social-side"></div></a></li> 
-          <li><a href="#">Twitter<div class="line-underneath social-side"></div></a></li>
-          <li><a href="#">Linkedin<div class="line-underneath social-side"></div></a></li>
+          <li><a href="https://www.mixcloud.com/yaggi/" target="_blank">Mixcloud<div class="line-underneath social-side"></div></a></li>
+          <li><a href="https://www.instagram.com/lifeasdave/" target="_blank">Instagram<div class="line-underneath social-side"></div></a></li> 
+          <li><a href="https://twitter.com/lifeasdave" target="_blank">Twitter<div class="line-underneath social-side"></div></a></li>
+          <li><a href="https://www.linkedin.com/in/metajive" target="_blank">Linkedin<div class="line-underneath social-side"></div></a></li>
         </ul>
       </div>
     </div>
   </div>
+
+  {{>about}}
+  {{>projects}}
+  {{>project1}}
+  {{>awards}}
+  {{>service}}
+  {{>content}}
+  {{>paying}}
 </template>

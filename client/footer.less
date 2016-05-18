@@ -1,21 +1,28 @@
+body {
+      overflow-x: hidden;
+      position: relative;
+}
 .footer-container {
     color: white;
+    background: #434343;
     position: relative;
-    background-size: 100% 100%;
+
     bottom: 0;
     left: 0;
-    padding: 0 7.5%;
+    padding: 120px 7.5% 0 7.5%;
+
    h6 {
     margin-top: 0!important;
     font-family: 'Merriweather', serif;
     font-style: italic;
     font-weight: bold;
     padding-left: 6px;
-    font-size: 12px;
+    font-size: 16px;
     margin-bottom: 12px;
-    padding-top: 220px !important;
     margin-left: 0 !important;
     margin-right: 0 !important;
+    z-index: 3;
+    position: relative;
   }
 
   h1 {
@@ -26,7 +33,11 @@
       margin-left: 0 !important;
       margin-right: 0 !important;
       letter-spacing: 3px;
+      z-index: 1;
   }
+
+
+
 
   p {
     width: 85%;
@@ -36,33 +47,39 @@
     margin-bottom: 33px;
          margin-left: 0 !important;
   margin-right: 0 !important;
+  z-index: 1;
   }
 
   h3 {
     font-size: 22px;
-    font-family: 'cooper_hewittmedium';
+    font-family: 'cooper_hewittsemibold';
+    z-index: 1;
+    position: relative;
   }
 
  .contacts {
-    margin: 0 0 40px 0;
+    margin: 0 0 7px 0;
     padding: 0;
 
     .each-contact {
-
+      z-index: 1;
       float: left;
       padding-right: 20px;
       list-style: none;
       font-family: 'cooper_hewittmedium';
       background: none;
+      position:relative;
 
 
 
 
       &:first-child {
         font-family: 'cooper_hewittbook';
+        z-index: 3;
       }
 
       a {
+        z-index: 3;
         text-decoration: none;
         color: white;
         position: relative;
@@ -80,7 +97,7 @@
 
 .below-footer {
   width: 100%;
-  height: 240px;
+  height: 225px;
   background: none;
 }
 
@@ -91,13 +108,15 @@
 
 .copyright {
   position: absolute;
-  bottom: 170px;
+  bottom: 120px;
   padding: 20px 0;
   width: 100%;
   left: 0;
+  z-index: 3;
   background: white;
     h4 {
-      color:black;
+      color: rgba(69, 69, 69, 0.8);
+      font-size: 12px;
       font-style: normal !important;
       margin: 0 !important;
       letter-spacing: 1px;
@@ -119,4 +138,22 @@
   z-index: 0;
 }
 
+a {
+  text-decoration: none;
+  color:white;
+}
 
+@media screen and (max-width: 400px) {
+
+  .footer-container {
+    padding-top: 60px;
+  }
+  .each-contact {
+    padding-right: 9px !important;
+      font-size: 12px;
+  }
+  .each-contact a {
+  
+
+  }
+}

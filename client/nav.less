@@ -1,0 +1,155 @@
+.nav {
+  display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;      /* TWEENER - IE 10 */
+  display: -webkit-flex;     /* NEW - Chrome */
+  display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  justify-content: space-between;
+  -webkit-justify-content: space-between;
+  top: 0;
+  background: rgba(255, 255, 255, 0.85);
+  position: fixed;
+  height: 50px;
+  width: 100%;
+  padding: 16px 0 16px 0;
+  z-index: 12;
+.nav-logo {
+  float: left;
+  left: 3.75%;
+  top: -30px;
+  position: absolute;
+  width: 150px;
+
+}
+
+.hamburger {
+  display: none;
+  width: 40px;
+  padding-right: 1.75%;
+  float: right;
+  cursor: pointer;
+}
+
+.mobile-logo {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  top: 0px;
+  width: 150px;
+}
+
+.nav-links {
+
+  .nav-link-wrap {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+
+  .nav-link {
+    margin: 0 24px 16px 0;
+    float: right;
+    display: inline-block;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-family: 'cooper_hewittmedium';
+    cursor: pointer;
+    color: #797979;
+
+    &:first-child {
+      margin: 0 3.75% 6px 0;
+    }
+
+    a {
+      text-decoration: none;
+      color: #797979;
+      float: left;
+      display: block;
+      position: relative;
+    &:hover .line-underneath {
+      max-width: 100% !important;
+    }
+    } 
+
+  }
+}
+}
+}
+
+.clicked {
+  max-width: 100%!important;
+}
+
+.mobile-nav-links {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 14;
+  background-color: rgba(131, 130, 130, 0.9);
+
+  .mobile-nav-link-wrap {
+    font-size: 10vw;
+    font-family: 'cooper_hewittbold';
+    color: white;
+    letter-spacing: 1px;
+    text-align: center;
+
+    .mobile-nav-logo {
+      width: 300px;
+      margin: 30px auto 10px auto;
+      padding-left: 60px;
+      position: relative;
+      z-index: 15;
+
+    }
+
+    .mobile-nav-link {
+      margin-bottom: 15px;
+    }
+
+
+  }
+
+  .close {
+      cursor: pointer;
+      position: absolute;
+      top: 5px;
+      right: 15px;
+      font-family: 'cooper_hewittbold';
+      color: white;
+      font-size: 30px;
+    }
+
+}
+
+@media screen and (max-width: 900px) {
+  .hamburger {
+    display: block !important;
+  }
+
+  .nav {
+    background-color: rgba(131, 130, 130, 0.5);
+    height: 30px !important;
+    padding: 6px 0 6px 0;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+  .nav-link-wrap {
+    display: none;
+  }
+
+  .nav-logo {
+    display: none;
+  }
+
+  .mobile-logo {
+    display: block !important;
+  }
+
+
+}
+
+
+

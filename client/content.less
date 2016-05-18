@@ -9,6 +9,7 @@
   position: relative;
 
 
+
   
 
  h5 {
@@ -18,6 +19,7 @@
     margin-top: 120px;
     margin-bottom: 12px;
     padding-left: 6px;
+
   }
 
   h1 {
@@ -25,6 +27,8 @@
       font-size: 60px;
       margin:0;
       padding: 0;
+      z-index: 3;
+      position: relative;
 
 
   }
@@ -36,7 +40,6 @@
       margin-top: 18px;
       margin-bottom: 36px;
       position: relative;
-
 
     }
 
@@ -51,8 +54,10 @@
         position: relative;
         overflow: visible !important;
         width: 30%;
+        z-index: 1;
         margin-right: 5%;
         height: 400px;
+       
         &:last-child {
           margin-right: 0;
 
@@ -60,7 +65,8 @@
         .content-logo {
           margin-top: 30px;
           height: 90px;
-
+          position:relative;
+          z-index: 5;
         }
 
          .content-title {
@@ -85,11 +91,11 @@
             font-family: 'Merriweather', serif;
             font-style: italic;
             font-weight: bold;
+            position:relative;
             font-size: 16px;
             color: black;
             letter-spacing: 1px;
             cursor: pointer;
-            position: relative;
 
             &:hover .line-underneath{
               max-width: 100%;
@@ -104,10 +110,23 @@
 .black {
   height: 2px !important;
   background: black !important;
+  bottom: -2px;
+}
+
+
+
+.fill-triangle {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  top: -135px;
+  height: 135px;
+  background: #edeeee;
+  display: none;
 }
 
 .content-triangle {
-  top: 0;
+  bottom: 0px;
   right: 0;
   position: absolute;
   height: 100%;
@@ -115,7 +134,19 @@
   z-index: 0;
 }
 
+.each-fade {
+   transform: translateY(20px);
+        -webkit-transform: translateY(20px);
+        -webkit-transition: all .5s ease;
+        transition: all .5s ease;
+        opacity: 0;
+}
+
 @media screen and (max-width: 1200px) {
+   .content-container ul li {
+    height: auto;
+  }
+
  .content-container p span {
     bottom: -29px;
   }
@@ -126,7 +157,17 @@
 
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 970px) {
+  .content-container ul li {
+    height: auto;
+  }
+
+  .content-container ul li a {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 750px) {
   .content-container ul li {
     float: none;
     width: 100%;
@@ -136,21 +177,46 @@
 }
 
 @media screen and (max-width: 600px) {
+  .content-logo {
+    height: 80px !important;
+  }
+  .content-title {
+    margin: 18px 0;
+  }
+  .content-paragraph {
+    margin: 18px 0 !important;
+  }
 .content-container ul li {
     float: none;
     width: 100%;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
   }
   .content-container ul li a {
     font-size: 15px;
+  }
+
+  .content-container h5 {
+    margin-top: 60px;
   }
 
   .content-container p {
     width: 90% !important;
   }
   .content-container h1 {
-    font-size: 40px;
+    font-size: 30px;
   }
+
+  .content-triangle {
+    bottom: 0;
+    width: auto;
+    left: 0;
+  }
+
+  .fill-triangle {
+    top: -50px;
+    display: block;
+  }
+
 
 }
 

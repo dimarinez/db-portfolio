@@ -1,8 +1,11 @@
+.awards-wrapped {
+
+}
+
 .awards-container {
-  padding: 0 7.5%;
-  background-image: url(/img/background.png);
-  background-size: 100% 100%;
-  background-position: 0;
+  padding: 0 7.5% 60px 7.5%;
+  position: relative;
+  z-index: 2;
   h5 {
     font-family: 'Merriweather', serif;
     font-style: italic;
@@ -10,22 +13,27 @@
     margin-top: 120px;
     margin-bottom: 18px;
     padding-left: 6px;
+    max-width: 1219px;
   }
 
   h1 {
       font-family: 'cooper_hewittheavy';
       font-size: 66px;
       margin: 0;
-      width: 30%;
+      width: 60%;
+      max-width: 1219px;
 
   }
 
   h3 {
-    font-size: 22px;
-    width: 70%;
+    font-size: 25px;
+    width: 58%;
+    font-weight: normal;
     font-family: 'cooper_hewittbook';
     margin-bottom: 36px;
+    max-width: 1219px;
   }
+
 
   .first {
     width: 100%;
@@ -41,7 +49,15 @@
       font-size: 0;
       overflow: auto;
       background: white;
-
+      transform:translateY(20px);
+      transition: all .3s ease-in;
+      -webkit-transform:translateY(20px);
+      -moz-transform:translateY(20px);
+      -o-transform:translateY(20px);
+      -webkit-transition: all .3s ease-in;
+      -moz-transition: all .3s ease-in;
+      -o-transition: all .3s ease-in;
+      opacity: 0;    
       &:first-child {
         width: 50%;
         height: 50%;
@@ -90,7 +106,6 @@
     height: auto;
     margin: 0;
     padding: 0;
-
     li {
       width: 50%;
       height: 50%;
@@ -99,7 +114,15 @@
       float: left;
       font-size: 0;
       background: white;
-      
+       transform:translateY(20px);
+      transition: all .3s ease-in;
+      -webkit-transform:translateY(20px);
+      -moz-transform:translateY(20px);
+      -o-transform:translateY(20px);
+      -webkit-transition: all .3s ease-in;
+      -moz-transition: all .3s ease-in;
+      -o-transition: all .3s ease-in;
+      opacity: 0;    
 
 
       &:nth-child(2){
@@ -156,6 +179,15 @@
       font-size: 0;
       overflow: auto;
       background: white;
+       transform:translateY(20px);
+      transition: all .3s ease-in;
+      -webkit-transform:translateY(20px);
+      -moz-transform:translateY(20px);
+      -o-transform:translateY(20px);
+      -webkit-transition: all .3s ease-in;
+      -moz-transition: all .3s ease-in;
+      -o-transition: all .3s ease-in;
+      opacity: 0;    
 
       img {
         height: 100% !important;
@@ -194,6 +226,8 @@
   clear: both;
   text-align: center;
   cursor: pointer;
+  position: relative;
+
 
   h4 {
     font-size: 24px;
@@ -229,12 +263,11 @@
     }
     h1 {
       font-size: 1.25vw;
-      width: 100%;
-      margin: 6.5% auto 13% auto;
+      margin: 6.5% auto 6.5% auto !important;
       font-family: 'cooper_hewittsemibold';
       color: rgb(69, 69, 69);
       line-height: 1.5;
-      width: 55%;
+      width: 70%;
 
     }
 
@@ -242,7 +275,7 @@
       color: rgb(69, 69, 69);
       font-family: 'cooper_hewittmedium';
       font-size: 1.25vw;
-      margin: 6.5% auto 0 auto;
+      margin: 6.5% auto 0 auto !important;
       text-align: center;
       letter-spacing: .5px;
 
@@ -252,7 +285,7 @@
       color: rgb(69, 69, 69);
       font-family: 'cooper_hewittbook' !important;
       font-size: .75vw;
-      margin: 1.5% 0 6.5% 0;
+      margin: 1.5% auto 6.5% auto !important;
       text-align: center !important;
       font-style: normal!important;
       letter-spacing: 1px;
@@ -283,7 +316,78 @@
   background: white;
 }
 
+.awards-top-triangle {
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.awards-bottom-triangle {
+   position: absolute;
+  z-index: 0;
+  bottom: 0;
+  left: 0px;
+  width: 100%;
+}
+
+@media screen and (min-width: 2000px) {
+  .first, .second, .third {
+    max-height: 610px;
+    max-width: 1219px;
+    margin: 0 auto !important;
+  }
+
+ 
+   .info .info-group h5 {
+    font-size: 15px;
+    width: 85%;
+    margin: 0 auto;
+    text-align: center;
+
+  }
+
+   .info .info-group h1 {
+    font-size: 20px;
+    width: 80%;
+
+   
+   }
+   .info .info-group h3 {
+    font-size: 17px;
+    width: 80%;
+    margin: 0 auto 36px auto;
+
+   }
+
+   .awards-container h5 {
+    width: 1219px;
+    margin: 120px auto 18px auto;
+  }
+
+   .awards-container h1 {
+    width: 1219px;
+     margin: 0 auto;
+   }
+   .awards-container h3 {
+    width: 1219px;
+    margin:0 auto 36px auto;
+   }
+   .big-button {
+    max-width: 1219px;
+    margin: 0 auto;
+   }
+
+}
+
+
+
 @media screen and (max-width: 600px) {
+
+  .awards-container h5 {
+    margin-top: 60px;
+  }
 
   .big-button h4 {
     font-size: 16px;
@@ -292,7 +396,7 @@
     width: 97% !important;
   }
   .awards-container h1 {
-    font-size: 40px;
+    font-size: 30px;
     width: 90%;
   }
   .first li, .second li, .third li {
@@ -307,6 +411,9 @@
     display: none;
   }
 
+.clear {
+  clear: both;
+}
 
 
 .arrow {
@@ -316,16 +423,24 @@
 
 
   .info .info-group h1 {
-    font-size: 10px !important;
-  }
-  .info .info-group h3 {
-    font-size: 10px !important;
+    font-size: 8px !important;
   }
   .info .info-group h3 {
     font-size: 8px !important;
   }
+  .info .info-group h5 {
+    font-size: 6px !important;
+  }
   .remove li:last-child {
     display: none;
+  }
+
+  .special li:nth-child(3) {
+    display: none;
+  }
+
+  .special li:last-child {
+    display: block;
   }
 }
 
